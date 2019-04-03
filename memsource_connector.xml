@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>Memsource Connector</name>
+    <description>Memsource Cloud connector for Joomla</description>
+    <element>com_memsource_connector</element>
+    <version>1.0.0</version>
+    <author>Memsource a.s.</author>
+    <copyright>Copyright (C) 2019 Memsource a.s. All rights reserved.</copyright>
+    <authorEmail>integrations@memsource.com</authorEmail>
+    <authorUrl>https://www.memsource.com</authorUrl>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <administration>
+        <menu link='index.php?option=com_memsource_connector'>COM_MEMSOURCE_CONNECTOR</menu>
+        <files folder="admin">
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>memsource_connector.php</filename>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_memsource_connector.ini</language>
+        </languages>
+    </administration>
+    <files folder="site">
+        <folder>api</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>memsource_connector.php</filename>
+    </files>
+    <updateservers>
+        <server type="extension" name="Helloworld" priority="1">
+            https://raw.githubusercontent.com/Memsource/joomla-connector/master/memsource_connector_update.xml
+        </server>
+    </updateservers>
+</extension>
