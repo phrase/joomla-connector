@@ -5,18 +5,18 @@
         <description>Memsource Cloud connector for Joomla</description>
         <element>com_memsource_connector</element>
         <type>component</type>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
         <downloads>
             <downloadurl type="full" format="zip">
-                https://github.com/Memsource/joomla-connector/archive/v1.0.1.zip
+                https://github.com/Memsource/joomla-connector/archive/v1.1.0.zip
             </downloadurl>
         </downloads>
         <infourl title="Weblinks Extension Package">
-            https://github.com/Memsource/joomla-connector/releases/tag/v1.0.1
+            https://github.com/Memsource/joomla-connector/releases/tag/v1.1.0
         </infourl>
         <maintainer>Memsource a.s.</maintainer>
         <maintainerurl>https://www.memsource.com</maintainerurl>
         <client>administrator</client>
-        <targetplatform name="joomla" version="3.[789]" />
+        <targetplatform name="joomla" version="3.[789]|10" />
     </update>
 </updates>

@@ -30,4 +30,18 @@ class MemsourceConnectorModelsDtoDetail extends MemsourceConnectorModelsDtoResul
 	{
 		return $this->body;
 	}
+
+	/**
+	 * Set body of the article.
+	 *
+	 * @param   string $body Article body
+	 *
+	 * @return  void
+	 *
+	 * @since   1.1.0
+	 */
+	public function setBody($body)
+	{
+		$this->body = $body;
+	}
 }

@@ -19,11 +19,18 @@ class MemsourceConnectorApiTypes extends MemsourceConnectorApiBase
 	 */
 	public function getList()
 	{
+		$types = array(
+			'articles',
+			'categories'
+		);
+
+		if (MemsourceConnectorModelsEasyblogPosts::isExtensionActive())
+		{
+			$types[] = 'easyblogPosts';
+		}
+
 		return array(
-			'types' => array(
-				'articles',
-				'categories'
-			)
+			'types' => $types
 		);
 	}
 }

@@ -39,6 +39,20 @@ abstract class MemsourceConnectorModelsDtoResult implements JsonSerializable
 	}
 
 	/**
+	 * Set ID of the article.
+	 *
+	 * @param   string $id Article ID
+	 *
+	 * @return  void
+	 *
+	 * @since   1.1.0
+	 */
+	public function setId($id)
+	{
+		$this->id = $id;
+	}
+
+	/**
 	 * Get title of the article.
 	 *
 	 * @return string
@@ -51,11 +65,25 @@ abstract class MemsourceConnectorModelsDtoResult implements JsonSerializable
 	}
 
 	/**
+	 * Set title of the article.
+	 *
+	 * @param   string $title Article title
+	 *
+	 * @return  void
+	 *
+	 * @since   1.1.0
+	 */
+	public function setTitle($title)
+	{
+		$this->title = $title;
+	}
+
+	/**
 	 * Return data which should be serialized by json_encode().
 	 *
-	 * @return  array
+	 * @return array
 	 *
-	 * @since   1.0.0
+	 * @since  1.0.0
 	 */
 	public function jsonSerialize()
 	{

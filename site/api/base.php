@@ -64,7 +64,8 @@ abstract class MemsourceConnectorApiBase implements MemsourceConnectorApiInterfa
 	/**
 	 * Get instance of model class.
 	 *
-	 * @param   string $type Model type.
+	 * @param   string $type      Model type.
+	 * @param   string $namespace Namespace of the model class.
 	 *
 	 * @return  MemsourceConnectorModelsContent
 	 *
@@ -72,9 +73,16 @@ abstract class MemsourceConnectorApiBase implements MemsourceConnectorApiInterfa
 	 *
 	 * @since   1.0.0
 	 */
-	protected function getModelInstance($type)
+	protected function getModelInstance($type, $namespace = '')
 	{
-		$model = JModelLegacy::getInstance($type, MEMSOURCE_CONNECTOR_MODEL);
+		$prefix = MEMSOURCE_CONNECTOR_MODEL;
+
+		if ($namespace !== '')
+		{
+			$prefix .= $namespace;
+		}
+
+		$model = JModelLegacy::getInstance($type, $prefix);
 
 		if ($model === false)
 		{

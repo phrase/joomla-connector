@@ -6,7 +6,7 @@
 defined('_JEXEC') or die;
 
 /**
- * @since 1.0.0
+ * @since 1.0.1
  */
 class MemsourceConnectorApiAccount extends MemsourceConnectorApiBase
 {
@@ -15,7 +15,7 @@ class MemsourceConnectorApiAccount extends MemsourceConnectorApiBase
 	 *
 	 * @return  array
 	 *
-	 * @since   1.0.0
+	 * @since   1.0.1
 	 */
 	public function getList()
 	{

@@ -3,7 +3,7 @@
     <name>Memsource Connector</name>
     <description>Memsource Cloud connector for Joomla</description>
     <element>com_memsource_connector</element>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <author>Memsource a.s.</author>
     <copyright>Copyright (C) 2019 Memsource a.s. All rights reserved.</copyright>
     <authorEmail>integrations@memsource.com</authorEmail>
