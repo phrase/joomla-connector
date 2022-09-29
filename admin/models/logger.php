@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (C) 2019 Memsource a.s. All rights reserved.
+ * @copyright Copyright (C) 2019 Phrase a.s. All rights reserved.
  * @license   GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die;
@@ -15,7 +15,7 @@ jimport('joomla.filesystem.file');
 class MemsourceConnectorModelsLogger
 {
 	const LOG_FILE = 'com_memsource_connector.joomla.log';
-	const LOG_FILE_RECIPIENT = 'integrations@memsource.com';
+	const LOG_FILE_RECIPIENT = 'integrations@phrase.com';
 
 	/**
 	 * Log HTTP request and response.

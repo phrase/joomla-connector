@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (C) 2019 Memsource a.s. All rights reserved.
+ * @copyright Copyright (C) 2019 Phrase a.s. All rights reserved.
  * @license   GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die;
@@ -41,7 +41,20 @@ class MemsourceConnectorViewSettings extends JViewLegacy
 
 		$this->logFileSize = MemsourceConnectorModelsLogger::getLogFileSize();
 
-		JToolBarHelper::title(JText::_('COM_MEMSOURCE_CONNECTOR'), 'pencil-2');
+		JFactory::getDocument()->addStyleDeclaration(
+			' .icon-phrase { 
+				background-image: url("components/com_memsource_connector/images/phrase.svg");
+				background-repeat: no-repeat;
+				width: 17px;
+				height: 25px;
+				background-size: 100% 100%;
+				position: relative;
+				top: 6px;
+				left: 5px;
+			} '
+		);
+
+		JToolBarHelper::title(JText::_('COM_MEMSOURCE_CONNECTOR'), 'phrase');
 
 		parent::display($tpl);
 	}

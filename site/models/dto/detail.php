@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (C) 2019 Memsource a.s. All rights reserved.
+ * @copyright Copyright (C) 2019 Phrase a.s. All rights reserved.
  * @license   GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die;

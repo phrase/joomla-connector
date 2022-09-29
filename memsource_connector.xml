@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
-    <name>Memsource Connector</name>
-    <description>Memsource Cloud connector for Joomla</description>
+    <name>Phrase TMS Connector</name>
+    <description>Phrase TMS Connector for Joomla</description>
     <element>com_memsource_connector</element>
-    <version>1.1.0</version>
-    <author>Memsource a.s.</author>
-    <copyright>Copyright (C) 2019 Memsource a.s. All rights reserved.</copyright>
-    <authorEmail>integrations@memsource.com</authorEmail>
-    <authorUrl>https://www.memsource.com</authorUrl>
+    <version>2.0.0</version>
+    <author>Phrase a.s.</author>
+    <copyright>Copyright (C) 2019 Phrase a.s. All rights reserved.</copyright>
+    <authorEmail>integrations@phrase.com</authorEmail>
+    <authorUrl>https://www.phrase.com</authorUrl>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <administration>
         <menu link='index.php?option=com_memsource_connector'>COM_MEMSOURCE_CONNECTOR</menu>
         <files folder="admin">
+            <folder>images</folder>
             <folder>language</folder>
             <folder>models</folder>
             <folder>views</folder>
